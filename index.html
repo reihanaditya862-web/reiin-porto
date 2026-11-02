@@ -39,8 +39,8 @@
 @media(max-width:560px){.social-grid{grid-template-columns:1fr;gap:12px;margin:-20px 0 50px}.social-card{padding:22px}.social-icon{width:55px;height:55px}.social-handle{font-size:25px}.social-arrow{font-size:25px}}
 
 </style>
-  <script defer>
-(() => {
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
   const themeToggle = document.getElementById('themeToggle');
   const mobileToggle = document.getElementById('mobileToggle');
@@ -103,7 +103,7 @@
     }, { threshold: .09, rootMargin: '0px 0px -30px 0px' });
     targets.forEach(target => observer.observe(target));
   } else targets.forEach(target => target.classList.add('visible'));
-})();
+});
 
 </script>
 </head>
