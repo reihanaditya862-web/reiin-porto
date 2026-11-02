@@ -1,263 +1,84 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f5f4ef" />
-  <meta name="description" content="Portofolio Reihan Nor Aditya SP (Reiin), mahasiswa Bisnis Digital PENS. Proyek digital, pengalaman kompetisi robotik, dan kepanitiaan." />
-  <meta property="og:title" content="Reiin — Digital playground" />
-  <meta property="og:description" content="Reihan Nor Aditya SP a.k.a. Reiin — projects, competitions, and experiences." />
-  <meta property="og:type" content="website" />
-  <title>Reihan Nor Aditya SP (Reiin) — Digital Playground</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23d6f655%22/%3E%3Ctext%20x%3D%2218%22%20y%3D%2248%22%20font-family%3D%22Arial%2Csans-serif%22%20font-weight%3D%22bold%22%20font-size%3D%2251%22%20fill%3D%22%231a1c18%22%3Er%3C/text%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2247%22%20r%3D%225%22%20fill%3D%22%231a1c18%22/%3E%3C/svg%3E%0A" type="image/svg+xml" />
-  <style>
-:root{--bg:#f5f4ef;--ink:#1c211b;--muted:#656d64;--line:#d9ddd1;--lime:#d6f655;--lime2:#b9e735;--panel:#eceee6;--card:#fff;--white:#fff;--blue:#c6d9ff;--yellow:#ffdf77;--pink:#ffc9c6;--header:rgba(245,244,239,.86);--shadow:rgba(24,33,18,.1)}
-:root[data-theme="dark"]{--bg:#151915;--ink:#f2f4eb;--muted:#b0b8ac;--line:#363e34;--lime:#d2ed64;--lime2:#b9e735;--panel:#202820;--card:#232b22;--white:#1e241d;--blue:#758db4;--yellow:#b7a056;--pink:#ac7b82;--header:rgba(21,25,21,.88);--shadow:rgba(0,0,0,.28)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;color:var(--ink);background:var(--bg);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .35s,color .35s}body.menu-open{overflow:hidden}::selection{background:var(--lime);color:#1d211b}a{color:inherit;text-decoration:none}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:2px solid #70ab30;outline-offset:4px}.container{width:min(1312px,calc(100% - 100px));margin-inline:auto}.noise{pointer-events:none;position:fixed;inset:0;z-index:30;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}.skip-link{position:absolute;top:-100px;left:10px;padding:10px;background:var(--lime);z-index:100}.skip-link:focus{top:10px}#progress{position:fixed;height:3px;width:0;left:0;top:0;background:var(--lime2);z-index:200;transition:width .08s linear}.site-header{position:sticky;top:0;z-index:50;background:var(--header);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:87px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-family:'Space Grotesk',sans-serif}.brand-glyph{font-size:38px;line-height:1;font-weight:700;letter-spacing:-5px;display:block}.brand-dot{color:#8aa73b}.brand-word{font-size:17px;font-weight:700;letter-spacing:-.09em}.brand-small{vertical-align:top;font-size:8px;margin-left:3px;letter-spacing:0}.nav-links{display:flex;gap:38px;margin-left:auto;margin-right:54px}.nav-links a{font-weight:600;font-size:13px;transition:opacity .2s}.nav-links a:hover{opacity:.5}.nav-actions{display:flex;align-items:center;gap:14px}.theme-toggle{border:1px solid var(--line);border-radius:50%;background:transparent;width:40px;height:40px;cursor:pointer;color:var(--ink);font-size:23px}.nav-cta{background:var(--ink);color:var(--bg);font-size:13px;font-weight:700;padding:15px 19px;border-radius:3px;transition:transform .2s}.nav-cta:hover{transform:translateY(-2px)}.nav-cta span{margin-left:16px}.mobile-toggle{display:none}.hero{padding-top:47px}.hero-eyebrow,.hero-footer,.section-label,.hero-pre,.card-top,.card-sub,.aside-foot,.project-topline,.project-visual-tag,.project-tags,.interest-top,.work-note>span:first-child,.now-heading,.now-footer,.contact-row,.footer,.about-chips{font-family:'DM Mono',monospace;font-weight:500;font-size:11px;letter-spacing:.045em}.hero-eyebrow{display:flex;align-items:center;gap:15px}.pulse-dot{width:9px;height:9px;background:#a5c93d;border-radius:50%;display:inline-block;box-shadow:0 0 0 5px rgba(163,207,49,.15);animation:pulse 2.5s infinite}.eyebrow-line{height:1px;width:50px;background:var(--line)}.hero-eyebrow>span:last-child{margin-left:auto;color:var(--muted)}.hero-body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,.62fr);align-items:center;gap:30px;min-height:645px;padding-top:35px;padding-bottom:50px}.hero-main{min-width:0}.hero-pre{display:flex;align-items:center;gap:12px;margin:0 0 24px;font-size:12px;text-transform:uppercase}.hero-pre .plus{font-size:17px;color:#86a43d}.hero-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(66px,8.7vw,142px);line-height:.88;letter-spacing:-.087em;font-weight:700;margin:0;max-width:100%;white-space:nowrap}.outline-word{display:block;font-style:italic;letter-spacing:-.11em;color:transparent;-webkit-text-stroke:2px var(--ink);font-weight:600}.title-last{display:block}.hero-asterisk{font-size:.43em;vertical-align:top;margin-left:.17em;color:#a3c42c;display:inline-block;animation:slowspin 16s linear infinite}.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-top:55px;max-width:660px}.hero-bottom p{font-size:17px;line-height:1.75;color:var(--muted);max-width:490px;margin:0}.hero-bottom strong{color:var(--ink);font-weight:700}.round-arrow{width:69px;height:69px;border:1px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:29px;flex:none;transition:background .25s,color .25s,transform .25s}.round-arrow:hover{background:var(--ink);color:var(--bg);transform:rotate(45deg)}.hero-aside{align-self:center;justify-self:end;width:min(100%,355px);transform:rotate(4deg);transition:transform .4s}.hero-aside:hover{transform:rotate(0)}.identity-card{aspect-ratio:4/5;border-radius:11px;padding:21px;background:var(--lime);color:#171c14;box-shadow:15px 22px 0 rgba(121,137,67,.12);overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;position:relative}.card-top{display:flex;justify-content:space-between;font-size:10px}.card-top span:last-child{font-size:18px}.avatar-art{position:relative;display:grid;place-items:center;flex:1;min-height:190px}.avatar-letter{font-family:'Space Grotesk',sans-serif;font-size:clamp(150px,18vw,260px);font-weight:700;line-height:1;letter-spacing:-.14em;text-shadow:6px 9px 0 #a6d63a;position:relative;z-index:2;transform:rotate(-8deg)}.orbit{position:absolute;inset:12% 5%;border:1px solid rgba(30,40,20,.35);border-radius:50%;transform:rotate(-25deg)}.orbit-two{inset:20% -10%;transform:rotate(30deg);border-style:dashed}.float-star{position:absolute;font-size:42px;z-index:3}.star-one{top:6%;right:6%}.star-two{bottom:3%;left:5%}.card-bottom{display:flex;flex-direction:column;gap:7px}.card-name{font:700 35px/1 'Space Grotesk',sans-serif;letter-spacing:-.08em}.card-name span{font-size:12px;vertical-align:top;letter-spacing:0;margin-left:4px}.card-sub{font-size:9px}.aside-foot{display:flex;align-items:center;gap:9px;font-size:10px;line-height:1.4;color:var(--muted);margin-top:22px;transform:rotate(-4deg)}.aside-foot span:last-child{margin-left:auto}.tiny-square{height:10px;width:10px;background:#b9d655;display:block;flex:none}.hero-footer{border-top:1px solid var(--line);display:flex;justify-content:space-between;padding:24px 0 28px;color:var(--muted)}.hero-footer>span:first-child span{margin-left:12px;color:var(--ink)}.local-circle{font-size:20px;vertical-align:middle;color:#7ba840}.section-pad{padding:123px 0}.about-section{background:var(--panel)}.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:30px}.section-label{display:flex;gap:10px;font-size:11px;align-items:center}.label-index{color:#8fae35}.big-copy{font:700 clamp(45px,5.5vw,78px)/1.08 'Space Grotesk',sans-serif;letter-spacing:-.065em;margin:-15px 0 37px}.big-copy em,.heading-italic,.contact-headline em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.07em}.big-copy em{color:#83a438}.body-copy{font-size:19px;line-height:1.85;max-width:715px;color:var(--muted);margin:0 0 18px}.body-copy strong{color:var(--ink)}.about-chips{display:flex;gap:11px;flex-wrap:wrap;margin-top:34px}.about-chips span{border:1px solid var(--line);border-radius:30px;padding:11px 15px;font-size:10px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:46px}.section-heading h2{font:700 clamp(47px,6vw,79px)/1 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:28px 0 0}.heading-italic{color:#89ac39}.heading-period{color:#a6c83c}.section-heading>p{max-width:315px;margin:0 0 3px;color:var(--muted);line-height:1.7;font-size:15px}.project-feature{display:grid;grid-template-columns:1.38fr 1fr;background:var(--card);border:1px solid var(--line);min-height:465px;transition:transform .3s,box-shadow .3s;overflow:hidden}.project-feature:hover{transform:translateY(-6px);box-shadow:0 25px 50px var(--shadow)}.project-visual{min-height:465px;background:#d9ecc5;padding:62px 33px 40px;position:relative;overflow:hidden;display:grid;place-items:center}.mock-glow{position:absolute;width:600px;height:600px;border-radius:50%;background:#b2d99b;filter:blur(40px);top:-290px;left:-100px}.mock-browser{width:95%;max-width:640px;position:relative;z-index:2;border-radius:12px;overflow:hidden;background:#f7fbf2;box-shadow:0 24px 50px rgba(20,50,27,.23);transform:rotate(-3deg) translateY(10px);transition:transform .5s}.project-feature:hover .mock-browser{transform:rotate(0) translateY(0)}.browser-top{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#e8f2e2;font:500 10px 'DM Mono',monospace;color:#778f75}.browser-lights{display:flex;gap:5px}.browser-lights i{height:7px;width:7px;background:#b5ceb0;border-radius:50%}.browser-lights i:first-child{background:#e0a39d}.mock-site{padding:22px 24px 32px;color:#193727}.mock-header{display:flex;justify-content:space-between;gap:9px;align-items:center;font-size:8px}.mock-logo{font-size:14px;color:#23774b}.mock-logo b{font-size:11px}.mock-menu{color:#688772}.mock-login{border-radius:5px;background:#227f4c;color:#fff;padding:9px 10px}.mock-content{display:grid;grid-template-columns:1.2fr .8fr;gap:15px;align-items:center;padding:38px 0 20px}.mock-chip{display:inline-block;border:1px solid #b3d6b4;padding:7px 12px;border-radius:30px;font:500 8px 'DM Mono';color:#44855c}.mock-content h3{font:700 clamp(29px,4.5vw,58px)/1.03 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:16px 0}.mock-content h3 em{color:#40a361;font-style:normal}.mock-content p{font-size:10px;line-height:1.7;max-width:260px;color:#769383}.mock-action{display:inline-flex;gap:25px;background:#277a4c;color:white;font-size:9px;padding:11px 14px;border-radius:5px;margin-top:10px}.recycle-illustration{position:relative;height:210px;display:grid;place-items:center}.recycle-ring{width:185px;height:185px;background:#c8edb2;border-radius:50%;display:grid;place-items:center;font-size:170px;line-height:1;color:#57b57a;transform:rotate(-25deg);opacity:.8}.bottle{position:absolute;width:43px;height:100px;background:#2e9361;border-radius:13px 13px 10px 10px;top:58px;left:45%;transform:rotate(-22deg);border:4px solid #e5f8de;box-shadow:10px 10px 0 #146940}.bottle:before{content:'';position:absolute;top:-18px;left:8px;width:20px;height:17px;background:#1f7b50;border-radius:3px 3px 0 0}.bottle-b{transform:rotate(25deg) scale(.8);left:60%;top:75px;opacity:.75}.recycle-spark{position:absolute;left:20px;top:0;color:#2b9259;font-size:40px}.project-visual-tag{position:absolute;bottom:21px;left:23px;z-index:3;color:#426e46}.project-info{padding:46px;display:flex;flex-direction:column;justify-content:center}.project-topline{display:flex;justify-content:space-between;gap:14px;color:var(--muted)}.project-name-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:31px 0 8px}.project-name-row h3{font:700 clamp(36px,3.7vw,54px) 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:0}.project-link-icon{display:grid;place-items:center;border-radius:50%;border:1px solid var(--line);width:49px;height:49px;font-size:25px;transition:transform .3s,background .3s}.project-feature:hover .project-link-icon{transform:rotate(45deg);background:var(--lime);color:#1d211b}.project-info>p{font-size:16px;line-height:1.85;color:var(--muted);max-width:405px}.project-tags{margin-top:27px;display:flex;gap:7px;flex-wrap:wrap}.project-tags span{border:1px solid var(--line);padding:9px 12px;border-radius:30px;font-size:10px;color:var(--muted)}.work-note{margin-top:15px;background:var(--lime);color:#242d17;min-height:145px;display:flex;align-items:center;padding:30px 40px;gap:35px}.work-note>span:first-child{flex:none}.work-note p{max-width:610px;font-size:17px;line-height:1.5;margin:0 auto 0 0}.rotating-star{font-size:70px;line-height:1;animation:slowspin 18s linear infinite}.explore-section{border-top:1px solid var(--line)}.interest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.interest-card{color:#1e281b;min-height:405px;padding:26px 30px 31px;display:flex;flex-direction:column;justify-content:space-between;position:relative;transition:transform .3s;overflow:hidden}.interest-card:hover{transform:translateY(-8px)}.card-blue{background:var(--blue)}.card-yellow{background:var(--yellow)}.card-pink{background:var(--pink)}.interest-top{display:flex;justify-content:space-between;align-items:center}.interest-top span:last-child{font-size:22px}.interest-icon{font:700 100px 'Space Grotesk',sans-serif;align-self:center;letter-spacing:-.12em;position:relative;transition:transform .3s}.interest-card:hover .interest-icon{transform:rotate(-9deg) scale(1.08)}.design-icon{width:150px;height:150px;display:grid;grid-template-columns:repeat(2,1fr);gap:9px;transform:rotate(14deg);padding:17px}.design-icon i{background:#293323;border-radius:50% 50% 0 50%}.design-icon i:nth-child(2){border-radius:50% 50% 50% 0;background:transparent;border:10px solid #293323}.design-icon i:nth-child(3){border-radius:0 50% 50% 50%}.design-icon i:nth-child(4){border-radius:50%}.interest-card:hover .design-icon{transform:rotate(40deg) scale(1.08)}.explore-icon{font-size:190px;font-weight:400;line-height:1}.explore-icon sup{font-size:60px;position:absolute;top:0;right:-12px}.interest-card h3{font:700 29px 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin:0 0 10px}.interest-card p{font-size:14px;line-height:1.7;max-width:290px;margin:0;color:#3e4939}.now-section{background:var(--ink);color:var(--bg);padding:83px 0 70px}.now-heading{display:flex;align-items:center;gap:15px}.now-main{display:flex;justify-content:space-between;align-items:end;gap:20px}.now-main p{font:700 clamp(43px,6.8vw,96px)/1.11 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:52px 0 67px}.now-main p span{color:var(--lime)}.now-mark{font-size:100px;line-height:1;margin-bottom:76px;color:var(--lime)}.now-footer{border-top:1px solid #777e72;padding-top:22px;display:flex;justify-content:space-between;gap:15px;color:#b1b9aa}.contact-section{padding-bottom:86px}.contact-kicker{margin:42px 0 12px;font-size:18px;color:var(--muted);max-width:560px}.contact-headline{font:700 clamp(68px,11vw,155px)/.98 'Space Grotesk',sans-serif;letter-spacing:-.09em;display:block;position:relative;margin:0 0 90px;transition:color .3s}.contact-headline em{color:#8dad3c}.contact-headline:hover{color:#7ca329}.contact-arrow{font-size:.42em;vertical-align:top;margin-left:40px;display:inline-block;transition:transform .3s}.contact-headline:hover .contact-arrow{transform:translate(15px,-12px)}.contact-row{border-top:1px solid var(--line);padding:27px 0 0;display:flex;justify-content:space-between;gap:30px}.contact-row>div{display:flex;gap:40px}.contact-row a{border-bottom:1px solid transparent;padding-bottom:4px}.contact-row a:hover{border-bottom-color:currentColor}.footer{border-top:1px solid var(--line);color:var(--muted);font-size:10px}.footer-inner{min-height:80px;display:flex;justify-content:space-between;align-items:center;gap:18px}.footer-flower{color:#8fad36;font-size:16px;vertical-align:middle}.footer a:hover{color:var(--ink)}.reveal{opacity:1;transform:none}.reveal.visible{animation:revealFade .6s ease both}.hero-aside.reveal,.hero-aside.reveal.visible{transform:rotate(4deg)}.hero-aside.reveal:hover,.hero-aside.reveal.visible:hover{transform:rotate(0)}@keyframes revealFade{from{opacity:.55}to{opacity:1}}@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(163,207,49,0)}}@keyframes slowspin{to{transform:rotate(360deg)}}
-@media(max-width:1100px){.container{width:min(100% - 60px,1312px)}.hero-title{font-size:clamp(70px,8.5vw,110px)}.hero-body{min-height:585px}.project-info{padding:30px}.mock-menu{display:none}.interest-card{padding:24px}.section-pad{padding:105px 0}}
-@media(max-width:830px){.nav-links{position:absolute;display:none;top:87px;left:0;right:0;background:var(--bg);padding:30px;flex-direction:column;gap:20px;border-bottom:1px solid var(--line);margin:0}.nav-links.open{display:flex}.nav-links a{font-size:20px}.mobile-toggle{display:flex;flex-direction:column;justify-content:center;gap:6px;width:40px;height:40px;background:none;border:none;cursor:pointer}.mobile-toggle span{width:23px;height:2px;background:var(--ink);display:block;transition:transform .2s}.mobile-toggle[aria-expanded="true"] span:first-child{transform:translateY(4px) rotate(45deg)}.mobile-toggle[aria-expanded="true"] span:last-child{transform:translateY(-4px) rotate(-45deg)}.hero-body{grid-template-columns:1fr;gap:58px;padding-top:75px}.hero-title{font-size:clamp(66px,12vw,106px)}.hero-aside{justify-self:center;width:325px}.hero-bottom{max-width:650px}.hero-footer{margin-top:30px}.about-grid{grid-template-columns:1fr;gap:35px}.big-copy{margin-top:0}.project-feature{grid-template-columns:1fr}.project-visual{min-height:430px}.project-info{padding:35px}.interest-grid{grid-template-columns:1fr 1fr}.interest-card{min-height:360px}.interest-card:last-child{grid-column:span 2}.contact-headline{font-size:clamp(65px,11vw,100px)}.footer-inner{flex-wrap:wrap;padding:25px 0}}
-@media(max-width:560px){.container{width:calc(100% - 38px)}.nav{height:72px}.nav-links{top:72px}.nav-cta{display:none}.hero{padding-top:24px}.hero-eyebrow{font-size:9px;gap:9px}.eyebrow-line{width:16px}.hero-body{padding-top:56px;padding-bottom:20px;gap:50px}.hero-pre{font-size:9px;gap:6px;white-space:nowrap}.hero-title{font-size:clamp(55px,12.8vw,77px)}.outline-word{-webkit-text-stroke:1.4px var(--ink)}.hero-bottom{margin-top:35px}.hero-bottom p{font-size:14px;line-height:1.7}.round-arrow{width:50px;height:50px;font-size:22px}.hero-aside{width:270px}.avatar-letter{font-size:200px}.hero-footer{font-size:9px;gap:20px}.hero-footer>span:last-child{display:none}.section-pad{padding:75px 0}.section-heading{display:block}.section-heading h2{font-size:51px}.section-heading>p{margin-top:22px}.big-copy{font-size:48px}.body-copy{font-size:16px}.about-chips span{font-size:9px}.project-visual{min-height:300px;padding:25px 12px}.mock-browser{width:100%}.mock-site{padding:14px}.mock-content{padding:18px 0 8px}.mock-content h3{font-size:29px}.mock-content p{font-size:8px}.mock-header{font-size:7px}.mock-logo b{font-size:9px}.mock-login{font-size:7px;padding:8px}.recycle-illustration{height:160px}.recycle-ring{width:120px;height:120px;font-size:110px}.bottle{transform:rotate(-22deg) scale(.65);left:25%;top:42px}.bottle-b{transform:rotate(25deg) scale(.5);left:50%;top:50px}.project-info{padding:28px 23px}.project-name-row h3{font-size:40px}.project-info>p{font-size:14px}.project-tags span{font-size:9px}.work-note{padding:25px;display:block;position:relative}.work-note p{font-size:14px;margin:17px 0 0;max-width:230px}.rotating-star{position:absolute;right:16px;bottom:10px;font-size:50px}.interest-grid{grid-template-columns:1fr}.interest-card,.interest-card:last-child{grid-column:1;min-height:335px}.interest-icon{font-size:85px}.explore-icon{font-size:150px}.now-section{padding:60px 0}.now-main p{font-size:46px;margin:40px 0 50px}.now-mark{display:none}.now-footer{font-size:9px;line-height:1.8;flex-direction:column}.contact-kicker{font-size:15px}.contact-headline{font-size:clamp(55px,12.2vw,75px);margin-bottom:60px}.contact-arrow{margin-left:10px}.contact-row{flex-direction:column}.contact-row>div{gap:25px}.footer-inner{display:flex;flex-direction:column;align-items:flex-start;gap:16px}.footer-inner>span:nth-child(2){display:none}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-
-/* Socials / direct profile links */
-.social-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:-44px 0 65px}
-.social-card{min-width:0;display:flex;align-items:center;gap:19px;padding:28px 29px;border:1px solid var(--line);background:var(--card);position:relative;overflow:hidden;transition:border-color .25s,transform .3s,box-shadow .3s}
-.social-card::before{content:"";position:absolute;inset:auto 0 0;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .35s}
-.social-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px var(--shadow);border-color:var(--muted)}
-.social-card:hover::before{transform:scaleX(1)}
-.social-icon{display:grid;place-items:center;width:63px;height:63px;flex:none;border-radius:18px;background:var(--panel);color:var(--ink)}
-.social-icon svg{width:32px;height:32px}
-.instagram-card .social-icon{background:linear-gradient(145deg,#feda75,#fa7e1e 33%,#d62976 69%,#962fbf);color:#fff}
-.tiktok-card .social-icon{background:#171d1a;color:#fff}
-.social-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
-.social-platform{font-size:10px;font-weight:800;letter-spacing:.16em;color:var(--muted)}
-.social-handle{font:700 clamp(20px,2.1vw,29px) 'Space Grotesk',sans-serif;letter-spacing:-.045em;overflow-wrap:anywhere}
-.social-subtitle{font-size:12px;color:var(--muted)}
-.social-arrow{font-size:28px;line-height:1;align-self:flex-start;margin-left:auto;transition:transform .3s}
-.social-card:hover .social-arrow{transform:translate(4px,-4px)}
-@media(max-width:830px){.social-grid{margin:-37px 0 50px}.social-card{padding:22px 18px;gap:12px}.social-icon{width:49px;height:49px;border-radius:14px}.social-icon svg{width:26px;height:26px}.social-arrow{font-size:21px}}
-@media(max-width:560px){.social-grid{grid-template-columns:1fr;gap:12px;margin:-20px 0 50px}.social-card{padding:22px}.social-icon{width:55px;height:55px}.social-handle{font-size:25px}.social-arrow{font-size:25px}}
-
-
-/* Portfolio update: real name and experience */
-/* Fail-safe: content must remain readable even when scroll animation fails. */
-.reveal,.reveal:not(.visible){opacity:1;transform:none}
-.nav-links{gap:25px;margin-right:27px}
-.real-name-eyebrow{font:600 11px/1.5 'DM Mono',monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:block;margin-top:15px}
-.hero-realname{font:700 clamp(15px,1.8vw,21px)/1.4 'Space Grotesk',sans-serif;letter-spacing:-.035em;margin:14px 0 0;color:var(--ink)}
-.hero-realname small{color:var(--muted);font:500 10px 'DM Mono',monospace;letter-spacing:.06em;margin-left:9px}
-.card-realname{font:600 12px/1.35 'Space Grotesk',sans-serif;letter-spacing:0;margin-top:5px;max-width:260px}
-.exp-teaser{padding:103px 0;background:var(--panel);border-block:1px solid var(--line)}
-.exp-teaser-content{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:stretch;margin-top:39px}
-.exp-lead{background:var(--lime);padding:38px;min-height:290px;color:#1a2116;display:flex;flex-direction:column;justify-content:space-between}
-.exp-lead .label{font:600 11px 'DM Mono',monospace;letter-spacing:.13em}
-.exp-lead h3{font:700 clamp(42px,5vw,67px)/1.02 'Space Grotesk',sans-serif;letter-spacing:-.072em;margin:22px 0 16px}
-.exp-lead p{font-size:15px;max-width:410px;line-height:1.65;margin:0}
-.exp-open{display:inline-flex;gap:17px;align-items:center;align-self:flex-start;background:#1a2116;color:#fff;padding:14px 19px;font-size:12px;font-weight:800;margin-top:23px;transition:transform .2s}
-.exp-open:hover{transform:translateY(-3px)}
-.exp-snapshot{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-.exp-stat{background:var(--card);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;justify-content:space-between;min-height:135px}
-.exp-stat strong{font:700 39px 'Space Grotesk',sans-serif;letter-spacing:-.08em}
-.exp-stat span{font-size:12px;color:var(--muted);line-height:1.5}
-.exp-stat:last-child{grid-column:span 2;min-height:120px;display:flex;flex-direction:row;align-items:end;gap:15px}
-.exp-stat:last-child strong{font-size:33px}
-.exp-page-title{font:700 clamp(66px,9vw,136px)/.95 'Space Grotesk',sans-serif;letter-spacing:-.085em;margin:29px 0 26px}
-.exp-page-title em{font-family:Georgia,serif;letter-spacing:-.08em;font-weight:400;color:#85a735}
-.exp-page-hero{padding:88px 0 70px;position:relative;overflow:hidden}
-.exp-page-intro{display:flex;justify-content:space-between;gap:35px;align-items:end}
-.exp-page-intro p{font-size:18px;line-height:1.75;color:var(--muted);max-width:610px;margin:0}
-.exp-big-star{font-size:clamp(80px,14vw,160px);line-height:1;color:var(--lime2);animation:slowspin 26s linear infinite}
-.exp-facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:33px}
-.exp-facts span{font:600 11px 'DM Mono',monospace;padding:11px 15px;border:1px solid var(--line);border-radius:100px}
-.exp-records{background:var(--panel);padding:92px 0 115px}
-.exp-records-intro{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:35px}
-.exp-records-intro h2{font:700 clamp(38px,5vw,62px)/1.05 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:16px 0 0}
-.exp-records-intro p{max-width:370px;font-size:14px;line-height:1.7;color:var(--muted);margin:0}
-.xp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.xp-card{background:var(--card);border:1px solid var(--line);min-width:0;transition:transform .25s,box-shadow .25s}
-.xp-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px var(--shadow)}
-.xp-card--wide{grid-column:span 2;display:grid;grid-template-columns:.95fr 1.05fr}
-.xp-photo{aspect-ratio:16/10;background:#dbe7c8;color:#283524;display:flex;justify-content:space-between;flex-direction:column;position:relative;overflow:hidden;padding:22px;isolation:isolate}
-.xp-photo:after{content:'✳';position:absolute;top:50%;left:50%;font-size:clamp(120px,20vw,260px);font-weight:800;line-height:1;transform:translate(-50%,-50%) rotate(-17deg);color:rgba(50,80,28,.13);z-index:-1}
-.xp-card:nth-child(2) .xp-photo{background:#dce5fd;color:#283348}
-.xp-card:nth-child(3) .xp-photo{background:#f2dc96;color:#483a23}
-.xp-card:nth-child(4) .xp-photo{background:#e1d9ec;color:#343044}
-.xp-photo .xp-photo-index{font:700 11px 'DM Mono',monospace;letter-spacing:.1em}
-.xp-photo .xp-placeholder-label{font:700 clamp(27px,3.8vw,53px)/1 'Space Grotesk',sans-serif;letter-spacing:-.06em;align-self:flex-start}
-.xp-photo .xp-photo-footer{display:flex;justify-content:space-between;align-items:center;font:600 11px 'DM Mono',monospace}
-.xp-photo .xp-photo-footer span:last-child{background:rgba(255,255,255,.58);padding:8px 10px;border-radius:30px}
-img.xp-photo{object-fit:cover;display:block;width:100%;padding:0}
-.xp-copy{padding:27px 29px 32px}
-.xp-card--wide .xp-copy{display:flex;flex-direction:column;justify-content:center;padding:36px 42px}
-.xp-top{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:15px}
-.xp-type{font:700 10px 'DM Mono',monospace;letter-spacing:.1em;color:#789633}
-.xp-year{font:600 11px 'DM Mono',monospace;color:var(--muted)}
-.xp-copy h3{font:700 clamp(26px,3.3vw,43px)/1.12 'Space Grotesk',sans-serif;letter-spacing:-.06em;margin:0 0 15px}
-.xp-copy p{font-size:14px;color:var(--muted);line-height:1.75;margin:0}
-.xp-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:23px}
-.xp-meta span{font:600 10px 'DM Mono',monospace;border:1px solid var(--line);padding:8px 10px;border-radius:25px}
-.xp-highlight{display:inline-block;background:var(--lime);color:#1a2116;font-weight:800;font-size:11px;letter-spacing:.08em;padding:8px 11px;margin-bottom:12px}
-.xp-after{margin-top:25px;padding:21px 25px;border:1px dashed var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center}
-.xp-after p{margin:0;font-size:13px;color:var(--muted);line-height:1.7}
-.xp-after a{white-space:nowrap;font-size:12px;font-weight:800;border-bottom:1px solid currentColor;padding-bottom:5px}
-@media(max-width:1050px){.nav-links{gap:17px;margin-right:17px}.exp-teaser-content{grid-template-columns:1fr 1fr}.xp-card--wide .xp-copy{padding:28px}}
-@media(max-width:830px){.exp-teaser-content{grid-template-columns:1fr}.exp-lead{min-height:260px}.exp-page-hero{padding:65px 0}.exp-records{padding:75px 0}.exp-page-intro{align-items:center}.xp-card--wide{grid-template-columns:1fr}.xp-card--wide .xp-photo{aspect-ratio:16/7}}
-@media(max-width:600px){.exp-teaser{padding:75px 0}.exp-lead{padding:28px}.exp-lead h3{font-size:50px}.exp-snapshot{gap:8px}.exp-stat{padding:17px;min-height:110px}.exp-stat strong{font-size:31px}.exp-stat:last-child strong{font-size:25px}.exp-page-hero{padding:51px 0}.exp-page-title{font-size:clamp(56px,13.2vw,85px)}.exp-page-intro p{font-size:15px}.exp-big-star{display:none}.exp-records-intro{display:block}.exp-records-intro p{margin-top:17px}.xp-grid{grid-template-columns:1fr;gap:15px}.xp-card--wide{grid-column:span 1}.xp-card--wide .xp-photo{aspect-ratio:16/10}.xp-photo{padding:20px}.xp-copy,.xp-card--wide .xp-copy{padding:23px}.xp-copy h3{font-size:32px}.xp-after{display:block}.xp-after a{display:inline-block;margin-top:15px}.hero-realname small{display:block;margin:4px 0 0}.real-name-eyebrow{font-size:10px}}
-
-
-/* Content remains visible even if intersection observer is unavailable. */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6f8">
+  <meta name="description" content="Portofolio Reihan Nor Aditya SP, dikenal sebagai Reiin. Mahasiswa Bisnis Digital PENS, eksplorasi UI/UX, pengembangan web, dan pengalaman robotika.">
+  <title>Reihan Nor Aditya SP — Reiin / Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div id="progress" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
-  <a class="skip-link" href="#main">Lewati navigasi</a>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Navigasi utama">
-      <a href="#top" class="brand" aria-label="Reiin, kembali ke atas"><span class="brand-glyph">r<span class="brand-dot">.</span></span><span class="brand-word">REIIN<span class="brand-small">®</span></span></a>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#work">Projects</a><a href="experience.html">Experience</a><a href="#explore">Interests</a><a href="#contact">Contact</a>
-      </div>
-      <div class="nav-actions">
-        <button class="theme-toggle" type="button" id="themeToggle" aria-label="Ganti tampilan terang atau gelap" title="Ganti tema"><span class="theme-icon" aria-hidden="true">◐</span></button>
-        <a class="nav-cta" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
-        <button class="mobile-toggle" type="button" id="mobileToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu"><span></span><span></span></button>
-      </div>
-    </nav>
+    <div class="header-inner layout-width">
+      <a class="brand" href="index.html" aria-label="Reiin — kembali ke beranda"><span class="brand-mark">r<span class="brand-dot">.</span></span><span class="brand-text">reiin<span class="brand-descriptor">/ personal space</span></span></a>
+      <nav class="nav-links" id="site-nav" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a><a href="#work">Proyek</a><a href="#journey">Perjalanan</a><a href="experience.html">Pengalaman</a><a href="#contact">Kontak</a>
+      </nav>
+      <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Aktifkan mode gelap" title="Ganti tema"><span class="theme-icon" aria-hidden="true">◐</span></button><button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button></div>
+    </div>
   </header>
-
   <main id="main">
-    <section class="hero container" aria-labelledby="heroTitle">
-      <div class="hero-eyebrow reveal"><span class="pulse-dot"></span><span>HELLO, INTERNET. I'M REIIN</span><span class="eyebrow-line"></span><span>PORTFOLIO / 2026</span></div>
-      <div class="hero-body">
-        <div class="hero-main">
-          <p class="hero-pre reveal">Student <span class="plus">✳</span> Explorer <span class="plus">✳</span> Digital Maker</p>
-          <h1 id="heroTitle" class="hero-title reveal">Ideas into<br /><span class="outline-word">something</span><span class="title-last">real<span class="hero-asterisk">✳</span></span></h1>
-          <p class="hero-realname reveal">Reihan Nor Aditya SP <small>/ also known as Reiin</small></p><div class="hero-bottom reveal"><p>Aku suka mengeksplorasi pertemuan antara <strong>teknologi, desain, dan bisnis</strong> — lalu mencoba mengubah ide kecil menjadi sesuatu yang bisa dipakai.</p><a class="round-arrow" href="#work" aria-label="Lihat project saya">↘</a></div>
+    <section class="hero-section layout-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-intro"><span class="pulse-dot" aria-hidden="true"></span> Reihan Nor Aditya SP <span class="intro-divider">/</span> Surabaya, Indonesia</div>
+        <h1 id="hero-title">Belajar,<br>mencoba,<br><span class="hero-outline">bertumbuh.</span></h1>
+        <div class="hero-subgrid">
+          <div class="hero-nickname"><span class="small-label">Panggil aku</span><strong>Reiin<span class="star-icon">✳</span></strong></div>
+          <div class="hero-description"><p>Dari dunia jaringan dan robotika, sekarang aku mengeksplorasi cara membuat pengalaman digital yang lebih baik melalui <b>UI/UX dan coding.</b></p><a class="underlined-link" href="#about">Kenalan lebih jauh <span aria-hidden="true">↗</span></a></div>
         </div>
-        <aside class="hero-aside reveal" aria-label="Kartu identitas Reiin">
-          <div class="identity-card">
-            <div class="card-top"><span>CREATIVE ID / 001</span><span>↗</span></div>
-            <div class="avatar-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="avatar-letter">R</span><span class="float-star star-one">✦</span><span class="float-star star-two">✧</span></div>
-            <div class="card-bottom"><span class="card-name">REIIN<span>™</span></span><span class="card-realname">Reihan Nor Aditya SP</span><span class="card-sub">ALWAYS A WORK IN PROGRESS.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi proses desain antarmuka dan eksperimen digital">
+        <div class="art-topline"><span>REIIN / DESIGN LAB</span><span class="art-live"><i></i> IN PROGRESS</span></div>
+        <div class="art-window">
+          <div class="art-window-top"><span class="window-dots"><i></i><i></i><i></i></span><span>untitled-exploration.fig</span><span>100%</span></div>
+          <div class="art-canvas">
+            <div class="canvas-guides"><span></span><span></span><span></span><span></span></div>
+            <div class="canvas-squiggle">R<span>.</span></div>
+            <div class="canvas-card canvas-card-back"><span>ITERATE ↗</span><div class="card-line"></div><div class="card-line short"></div></div>
+            <div class="canvas-card canvas-card-front"><div class="mini-card-nav"><i></i><i></i><i></i></div><div class="mini-ui-circle"></div><div class="mini-ui-title"></div><div class="mini-ui-copy"></div><div class="mini-ui-copy sm"></div><div class="mini-ui-button"></div></div>
+            <div class="cursor-arrow" aria-hidden="true"><svg viewBox="0 0 42 53" fill="none"><path d="M3 3L34 26L20 29L13 47L3 3Z" fill="#243bde" stroke="white" stroke-width="3" stroke-linejoin="round"/></svg><span>reiin</span></div>
           </div>
-          <div class="aside-foot"><span class="tiny-square"></span>Currently learning, building & figuring things out.<span>↗</span></div>
-        </aside>
+        </div>
+        <div class="art-footer"><span>Think → Sketch → Build → Repeat</span><span class="art-code">{ 2026 }</span></div>
       </div>
-      <div class="hero-footer reveal"><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span><span>BASED IN INDONESIA <span class="local-circle">◌</span></span></div>
+      <div class="hero-rail"><span>SCROLL TO EXPLORE</span><span class="rail-line"></span><span>01 — 05</span></div>
     </section>
 
-    <section id="about" class="about-section section-pad">
-      <div class="container about-grid"><div class="section-label reveal"><span class="label-index">01 /</span> A LITTLE ABOUT ME</div>
-        <div class="about-copy"><h2 class="big-copy reveal">Not an expert.<br />Just <em>really curious.</em></h2><p class="body-copy reveal">Halo! Aku <strong>Reihan Nor Aditya SP</strong>, biasa dipanggil <strong>Reiin</strong>, mahasiswa <strong>Bisnis Digital di PENS</strong>. Aku tertarik dengan cara desain yang bagus, teknologi yang tepat, dan ide bisnis yang relevan bisa bertemu untuk menyelesaikan masalah nyata.</p><p class="body-copy reveal">Sekarang aku lagi belajar membangun website dan aplikasi, mendalami UI/UX, serta aktif mengeksplorasi proyek, kompetisi robotik, dan pengalaman kepanitiaan. Belum tahu semuanya — tapi selalu ada hal baru untuk dicoba.</p><div class="about-chips reveal"><span>✳ UI/UX & FRONTEND</span><span>✳ DIGITAL BUSINESS</span><span>✳ CREATIVE TECH</span></div></div>
-      </div>
-    </section>
-
-    <section id="work" class="work-section section-pad"><div class="container"><div class="section-heading reveal"><div><div class="section-label"><span class="label-index">02 /</span> SELECTED WORK</div><h2>Things I've <span class="heading-italic">made</span><span class="heading-period">.</span></h2></div><p>Beberapa ide yang sedang atau pernah aku eksplorasi. Satu per satu, dari konsep menjadi prototipe.</p></div>
-      <a class="project-feature reveal" href="https://recyclechain.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Buka RecycleChain di tab baru">
-        <div class="project-visual"><div class="mock-glow" aria-hidden="true"></div><div class="mock-browser"><div class="browser-top"><div class="browser-lights"><i></i><i></i><i></i></div><span>recyclechain.vercel.app</span><span>↗</span></div><div class="mock-site"><div class="mock-header"><span class="mock-logo">♻ <b>RecycleChain</b></span><span class="mock-menu">Beranda&nbsp;&nbsp; Setor Sampah&nbsp;&nbsp; Reward</span><span class="mock-login">Mulai Sekarang ↗</span></div><div class="mock-content"><div><div class="mock-chip">♻ &nbsp; A greener way forward</div><h3>Sampahmu<br /><em>Jadi Saldo.</em></h3><p>Ubah kebiasaan kecil menjadi dampak besar. Pilah, setor, dan kumpulkan poin.</p><div class="mock-action">Mulai Daur Ulang <span>→</span></div></div><div class="recycle-illustration"><span class="recycle-ring">↻</span><span class="bottle bottle-a"></span><span class="bottle bottle-b"></span><span class="recycle-spark">✳</span></div></div></div></div><div class="project-visual-tag">FEATURED PROJECT / 001</div></div>
-        <div class="project-info"><div class="project-topline"><span>WEB APP · DIGITAL BUSINESS</span><span>2026</span></div><div class="project-name-row"><h3>RecycleChain</h3><span class="project-link-icon">↗</span></div><p>Prototipe platform digital untuk menghubungkan aktivitas daur ulang dengan poin dan reward. Membuat proses pengelolaan sampah terasa lebih mudah dan menarik.</p><div class="project-tags"><span>Product concept</span><span>Web prototype</span><span>Sustainability</span></div></div>
-      </a>
-      <div class="work-note reveal"><span>↗ &nbsp; NEXT UP</span><p>Masih banyak ide di daftar eksplorasi. Website, aplikasi, dan proyek berikutnya sedang menunggu giliran dibuat.</p><span class="rotating-star" aria-hidden="true">✳</span></div>
-    </div></section>
-
-
-    <section class="exp-teaser" id="experience-preview" aria-labelledby="expPreviewTitle">
-      <div class="container">
-        <div class="section-heading reveal"><div><div class="section-label"><span class="label-index">03 /</span> EXPERIENCE & ACHIEVEMENTS</div><h2 id="expPreviewTitle">Beyond the <span class="heading-italic">screen</span><span class="heading-period">.</span></h2></div><p>Pengalaman lomba, prestasi, dan kerja di balik layar sebuah event. Semua bagian dari proses belajarku.</p></div>
-        <div class="exp-teaser-content">
-          <div class="exp-lead reveal"><span class="label">A LITTLE JOURNEY / 2024 — NOW</span><div><h3>Compete.<br>Collaborate.<br>Grow.</h3><p>Dari arena robotik hingga kepanitiaan, aku belajar dari setiap percobaan, kekalahan, kerja sama, dan kemenangan teman-teman.</p></div><a class="exp-open" href="experience.html">Lihat semua pengalaman <span aria-hidden="true">↗</span></a></div>
-          <div class="exp-snapshot reveal" aria-label="Ringkasan pengalaman"><div class="exp-stat"><strong>02</strong><span>Partisipasi FOTEC<br>2024 & 2025</span></div><div class="exp-stat"><strong>2026</strong><span>IRTC LFA<br>Pengalaman &amp; juara 1 rekan</span></div><div class="exp-stat"><strong>NFRC '24</strong><span>Panitia · Sie Konsumsi & Acara</span></div></div>
+    <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+      <div class="layout-width about-layout">
+        <div class="section-index"><span class="index-glyph">✳</span><span>Tentang diriku</span><span class="index-count">01 / 05</span></div>
+        <div class="about-main"><h2 class="section-title" id="about-title">Halo, aku Reihan.<span class="section-title-sub">Orang yang suka mencoba hal baru.</span></h2>
+          <div class="about-story"><p>Aku <strong>Reihan Nor Aditya SP</strong>, biasa dipanggil Reihan atau <strong>Reiin</strong> di dunia digital. Aku lulusan <strong>SMK Negeri 2 Surabaya</strong>, jurusan Teknik Komputer dan Jaringan (TKJ). Dari sana, aku mendapat dasar pengetahuan tentang jaringan komputer dan internet.</p><p>Sekarang aku mahasiswa <strong>Politeknik Elektronika Negeri Surabaya (PENS)</strong> angkatan 2026/2027, program studi <strong>Sarjana Terapan Bisnis Digital</strong>. Aku diterima lewat jalur <strong>SNBP</strong> dan menjadi bagian dari angkatan pertama program studi ini.</p><p>Perjalananku belum selesai. Aku sedang mencoba coding dan mendalami <strong>UI/UX design</strong> sebagai arah yang ingin kutekuni untuk karier ke depan.</p></div>
+          <div class="about-facts"><div><span>Fondasi</span><strong>TKJ / Networking</strong></div><div><span>Sekarang</span><strong>Bisnis Digital / PENS</strong></div><div><span>Fokus berkembang</span><strong>UI/UX & Web</strong></div></div>
         </div>
       </div>
     </section>
 
-    <section id="explore" class="explore-section section-pad"><div class="container"><div class="section-heading reveal"><div><div class="section-label"><span class="label-index">04 /</span> MY UNIVERSE</div><h2>What keeps me <span class="heading-italic">curious</span><span class="heading-period">.</span></h2></div><p>Bukan cuma soal coding. Ini beberapa hal yang sering bikin aku betah riset sampai lupa waktu.</p></div>
-      <div class="interest-grid"><article class="interest-card card-blue reveal"><div class="interest-top"><span>01 / BUILD</span><span>↗</span></div><div class="interest-icon code-icon" aria-hidden="true">&lt;/&gt;</div><div><h3>Code & Create</h3><p>Belajar frontend, eksperimen dengan AI-assisted development, dan mencoba membuat produk digital.</p></div></article><article class="interest-card card-yellow reveal"><div class="interest-top"><span>02 / DESIGN</span><span>↗</span></div><div class="interest-icon design-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div><h3>Design & Detail</h3><p>UI/UX, Figma, tipografi, dan interaksi kecil yang bikin pengalaman terasa menyenangkan.</p></div></article><article class="interest-card card-pink reveal"><div class="interest-top"><span>03 / EXPLORE</span><span>↗</span></div><div class="interest-icon explore-icon" aria-hidden="true">◎<sup>✳</sup></div><div><h3>Tech & Beyond</h3><p>Gadget, audio, kultur Jepang, dan hal-hal menarik lain yang selalu punya cerita untuk digali.</p></div></article></div>
-    </div></section>
+    <section class="work-section section-pad" id="work" aria-labelledby="work-title">
+      <div class="layout-width"><div class="section-head"><div class="section-index dark-index"><span class="index-glyph">↳</span><span>Yang sedang kubuat</span><span class="index-count">02 / 05</span></div><h2 id="work-title" class="section-title">Mulai dari satu <span class="display-accent">ide nyata.</span></h2><p>Belajar paling terasa saat ide dicoba menjadi sesuatu yang bisa digunakan.</p></div>
+        <a class="featured-project" href="https://recyclechain.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Buka prototipe RecycleChain di tab baru">
+          <div class="project-preview"><div class="project-grid" aria-hidden="true"></div><div class="project-browser"><div class="project-browser-top"><div class="project-dots"><i></i><i></i><i></i></div><span>recyclechain.vercel.app</span></div><div class="recycle-preview"><div class="recycle-sidebar"><strong>♻ RecycleChain</strong><span>Beranda</span><span>Setor Sampah</span><span>Reward</span></div><div class="recycle-panel"><span class="recycle-pill">GREEN HABITS, BETTER FUTURE</span><h3>Sampahmu<br>Jadi Saldo<span>.</span></h3><p>Pilah sampah. Catat setoran. Kumpulkan poin.</p><div class="fake-cta">Mulai Jelajahi <span>↗</span></div></div><div class="recycle-symbol" aria-hidden="true">↻</div></div></div><div class="project-sticker">PROJECT / 001</div></div>
+          <div class="project-info"><span class="project-category">Website prototype / Sustainable digital business</span><div class="project-title-line"><h3>RecycleChain</h3><span class="project-arrow">↗</span></div><p>Eksplorasi konsep layanan digital yang menghubungkan kebiasaan memilah sampah, pencatatan setoran, dan sistem poin. Masih berupa prototipe, namun jadi ruang belajar dalam merancang pengalaman pengguna.</p><span class="project-tech">Product thinking <i></i> UI exploration <i></i> Web prototype</span></div>
+        </a>
+      </div>
+    </section>
 
-    <section class="now-section"><div class="container now-inner"><div class="now-heading reveal"><span class="pulse-dot"></span><span>CURRENTLY / RIGHT NOW</span></div><div class="now-main reveal"><p>Learning in public.<br /><span>Building along the way.</span></p><span class="now-mark" aria-hidden="true">↗</span></div><div class="now-footer reveal"><span>FOCUS: WEB · UI/UX · DIGITAL PRODUCTS</span><span>STATUS: ALWAYS EXPERIMENTING</span></div></div></section>
+    <section class="journey-section section-pad" id="journey" aria-labelledby="journey-title">
+      <div class="layout-width journey-grid"><div class="journey-intro"><div class="section-index"><span class="index-glyph">⌁</span><span>Jejak perjalanan</span><span class="index-count">03 / 05</span></div><h2 class="section-title" id="journey-title">Bukan cuma<br><span class="display-accent">hasil akhir.</span></h2><p>Kompetisi, kepanitiaan, sampai memulai perkuliahan. Tiap pengalaman membuatku punya hal baru untuk dipelajari.</p><a href="experience.html" class="pill-link">Lihat seluruh pengalaman <span aria-hidden="true">↗</span></a></div>
+        <ol class="timeline-list"><li><div class="timeline-year">2024</div><div class="timeline-content"><h3>Mulai mengumpulkan pengalaman</h3><p>Mengikuti <strong>FOTEC 2024</strong> dan terlibat menjadi panitia <strong>NFRC 2024</strong> bersama komunitas RCS Robotic SMKN 2 Surabaya, di seksi konsumsi dan acara.</p><span>Robotika · Event organizing</span></div></li><li><div class="timeline-year">2025</div><div class="timeline-content"><h3>Kembali ke arena kompetisi</h3><p>Mengikuti <strong>FOTEC 2.0</strong> dan mendapat pengalaman baru dalam proses persiapan, bertanding, serta belajar bersama teman-teman.</p><span>FOTEC 2.0 · LFA/LTA</span></div></li><li><div class="timeline-year">2026</div><div class="timeline-content"><h3>Menjelajah arah baru</h3><p>Mengikuti <strong>Kejurnas IRTC LFA</strong> dan memulai studi <strong>Bisnis Digital PENS</strong> lewat SNBP, sebagai bagian dari angkatan pertama program studi tersebut.</p><span>IRTC · PENS · UI/UX</span></div></li></ol>
+      </div>
+    </section>
 
-    <section id="contact" class="contact-section section-pad"><div class="container"><div class="section-label reveal"><span class="label-index">05 /</span> SAY HELLO</div><p class="contact-kicker reveal">Punya ide proyek, ingin berkolaborasi, atau sekadar ngobrol soal teknologi?</p><a class="contact-headline reveal" href="https://github.com/reihanaditya862-web" target="_blank" rel="noopener noreferrer">Let's make<br /><em>something.</em><span class="contact-arrow">↗</span></a><div class="social-grid reveal" aria-label="Media sosial Reiin">
-          <a class="social-card instagram-card" href="https://www.instagram.com/itsreiheree_/" target="_blank" rel="noopener noreferrer" aria-label="Buka Instagram Reiin, @itsreiheree_">
-            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.25"/><circle cx="17.8" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></span>
-            <span class="social-copy"><span class="social-platform">INSTAGRAM</span><span class="social-handle">@itsreiheree_</span><span class="social-subtitle">Photos, stories & everyday moments.</span></span>
-            <span class="social-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="social-card tiktok-card" href="https://www.tiktok.com/@lohkasar" target="_blank" rel="noopener noreferrer" aria-label="Buka TikTok Reiin, @lohkasar">
-            <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.75 2.25h-3.2v12.7a3.2 3.2 0 1 1-2.75-3.18V8.5a6.42 6.42 0 1 0 5.95 6.4V8.53a8.05 8.05 0 0 0 4.55 1.4V6.7a4.8 4.8 0 0 1-4.55-4.45Z"/></svg></span>
-            <span class="social-copy"><span class="social-platform">TIKTOK</span><span class="social-handle">@lohkasar</span><span class="social-subtitle">Short clips & creative experiments.</span></span>
-            <span class="social-arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
-        <div class="contact-row reveal"><span>FIND ME ON THE INTERNET</span><div><a href="https://github.com/reihanaditya862-web" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://recyclechain.vercel.app/" target="_blank" rel="noopener noreferrer">RECYCLECHAIN ↗</a></div></div></div></section>
+    <section class="experience-preview-section section-pad" aria-labelledby="xp-preview-title"><div class="layout-width"><div class="experience-preview-head"><div><div class="section-index"><span class="index-glyph">▧</span><span>Catatan lapangan</span><span class="index-count">04 / 05</span></div><h2 class="section-title" id="xp-preview-title">Momen yang<br>ikut membentukku.</h2></div><a href="experience.html" class="text-link">Lihat arsip pengalaman <span aria-hidden="true">↗</span></a></div><div class="photo-showcase"><a href="experience.html#irtc" class="showcase-item showcase-item-large"><img src="assets/irtc-2026.jpg" width="1600" height="720" alt="Foto bersama rekan komunitas robotika pada Kejurnas IRTC 2026" loading="lazy"><div class="showcase-caption"><span>2026 / Kejurnas IRTC LFA</span><strong>Belajar di tingkat nasional</strong><small>Dokumentasi bersama; juara 1 diraih rekan komunitas.</small></div></a><a href="experience.html#fotec-2025" class="showcase-item showcase-item-small"><img src="assets/fotec-2025.jpg" width="1280" height="720" alt="Dokumentasi bersama peserta dan rekan pada FOTEC 2.0 tahun 2025" loading="lazy"><div class="showcase-caption"><span>2025 / FOTEC 2.0</span><strong>Proses di balik perlombaan</strong><small>Rekan komunitas meraih juara 2.</small></div></a></div></div></section>
+
+    <section class="outside-section section-pad" aria-labelledby="outside-title"><div class="layout-width outside-grid"><div><span class="aside-symbol" aria-hidden="true">✳</span><h2 class="section-title" id="outside-title">Di luar tugas,<br>aku juga suka <span class="display-accent">ngulik.</span></h2><p>Aku senang mencoba dan mengoleksi perangkat elektronik: mouse, keyboard, IEM, gamepad, dan perangkat lain yang menarik untuk dieksplorasi. Di luar itu, game dan Uma Musume juga jadi hiburan favoritku.</p></div><div class="hobby-panel"><span class="hobby-heading">A FEW THINGS I ENJOY</span><div class="hobby-item"><span>01</span><strong>Mechanical keyboards</strong><span>⌨</span></div><div class="hobby-item"><span>02</span><strong>Audio / IEM</strong><span>♫</span></div><div class="hobby-item"><span>03</span><strong>Gaming & peripherals</strong><span>✣</span></div><div class="hobby-item"><span>04</span><strong>Uma Musume</strong><span>✦</span></div></div></div></section>
+
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="layout-width contact-grid"><div><div class="section-index light-index"><span class="index-glyph">✳</span><span>Temukan aku</span><span class="index-count">05 / 05</span></div><h2 id="contact-title">Ada ide yang<br>menarik? <em>Halo dulu.</em></h2><p>Masih terus belajar, jadi aku senang menemukan perspektif, koneksi, dan pengalaman baru.</p></div><div class="social-stack"><a href="https://github.com/reihanaditya862-web" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>@reihanaditya862-web</span><b aria-hidden="true">↗</b></a><a href="https://www.instagram.com/itsreiheree_/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>@itsreiheree_</span><b aria-hidden="true">↗</b></a><a href="https://www.tiktok.com/@lohkasar" target="_blank" rel="noopener noreferrer"><span>TikTok</span><span>@lohkasar</span><b aria-hidden="true">↗</b></a></div></div></section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> REIIN. MADE WITH CURIOSITY.</span><span>DESIGNED & BUILT FOR THE WEB <span class="footer-flower">✳</span></span><a href="#top">BACK TO TOP ↑</a></div></footer>
-<script>
-(() => {
-  const root = document.documentElement;
-  const themeToggle = document.getElementById('themeToggle');
-  const mobileToggle = document.getElementById('mobileToggle');
-  const navLinks = document.getElementById('navLinks');
-  const progress = document.getElementById('progress');
-  const year = document.getElementById('year');
-  year.textContent = new Date().getFullYear();
-
-  const stored = (() => { try { return localStorage.getItem('reiin-theme'); } catch { return null; } })();
-  if (stored === 'dark' || stored === 'light') root.dataset.theme = stored;
-  themeToggle.addEventListener('click', () => {
-    const dark = root.dataset.theme !== 'dark';
-    root.dataset.theme = dark ? 'dark' : 'light';
-    try { localStorage.setItem('reiin-theme', root.dataset.theme); } catch {}
-    themeToggle.setAttribute('aria-label', dark ? 'Aktifkan tema terang' : 'Aktifkan tema gelap');
-  });
-
-  mobileToggle.addEventListener('click', () => {
-    const open = mobileToggle.getAttribute('aria-expanded') !== 'true';
-    mobileToggle.setAttribute('aria-expanded', String(open));
-    mobileToggle.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
-    navLinks.classList.toggle('open', open);
-    document.body.classList.toggle('menu-open', open);
-  });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    mobileToggle.setAttribute('aria-expanded', 'false');
-    navLinks.classList.remove('open');
-    document.body.classList.remove('menu-open');
-  }));
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-      mobileToggle.setAttribute('aria-expanded', 'false');
-      navLinks.classList.remove('open');
-      document.body.classList.remove('menu-open');
-    }
-  });
-
-  let ticking = false;
-  const onScroll = () => {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(() => {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      progress.style.width = (max > 0 ? window.scrollY / max * 100 : 0) + '%';
-      ticking = false;
-    });
-  };
-  document.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  const targets = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: .09, rootMargin: '0px 0px -30px 0px' });
-    targets.forEach(target => observer.observe(target));
-  } else targets.forEach(target => target.classList.add('visible'));
-})();
-</script>
+  <footer class="site-footer"><div class="layout-width footer-inner"><a href="#top" class="brand footer-brand"><span class="brand-mark">r<span class="brand-dot">.</span></span><span class="brand-text">reiin<span class="brand-descriptor">/ always exploring</span></span></a><p>Made with curiosity. Reihan Nor Aditya SP © 2026</p><a href="#top">Kembali ke atas ↑</a></div></footer>
 </body>
 </html>
