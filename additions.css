@@ -81,6 +81,11 @@
 .logo .mark{height:38px;width:auto}
 .sculpture-face .mark{width:60%;height:auto;color:var(--navy);filter:drop-shadow(1px 1px 0 #50728b) drop-shadow(1px 1px 0 #50728b) drop-shadow(1px 1px 0 #50728b) drop-shadow(1px 1px 0 #50728b) drop-shadow(7px 10px 12px #005a9c66)}
 @media(max-width:600px){.logo .mark{height:32px}}
+/* Wordmark "reiin" (warna ikut teks di sekitarnya, jadi otomatis ikut tema) */
+.wordmark{display:block;fill:currentColor;width:auto;height:.86em;overflow:visible}
+.hero h1 .wordmark{height:.9em}
+.footer-name .wordmark{height:.84em}
+.art-sign .wordmark{height:1.1em}
 
 /* Tombol tema */
 .header{gap:24px}.header nav{margin-left:auto}
