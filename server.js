@@ -1,8 +1,8 @@
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
-const base = path.join(__dirname, 'dist');
-const types = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.txt':'text/plain; charset=utf-8'};
+const base = __dirname;
+const types = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.txt':'text/plain; charset=utf-8','.jpg':'image/jpeg','.png':'image/png'};
 const portFlag = process.argv.indexOf('--port');
 const port = Number(process.env.PORT || (portFlag >= 0 ? process.argv[portFlag + 1] : 3000));
 const server = http.createServer((req,res) => {

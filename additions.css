@@ -1,0 +1,79 @@
+/* Tambahan dari Claude, dimuat setelah styles.css dan depth.css (GPT).
+   Isinya: highlight hero, section Karya (RecycleChain + cara kerja),
+   foto di detail lomba, tag panitia, dan daftar akun sosial. */
+
+/* Hero: satu titik fokus warna selain nama */
+.hl{color:var(--blue);background:linear-gradient(transparent 64%,var(--ice) 64%);padding-inline:2px}
+
+/* Karya */
+.work{padding-top:40px}
+.project{display:grid;grid-template-columns:1.05fr 1fr;background:#fff;border-radius:32px;overflow:hidden;box-shadow:var(--lift);transition:transform .3s,box-shadow .3s}
+.project:hover{transform:translateY(-4px);box-shadow:0 30px 70px -30px #1b365d88}
+.project:focus-visible{outline-offset:8px}
+.project-preview{background:radial-gradient(circle at 85% 15%,#0875b9 0,transparent 55%),var(--navy);padding:48px 40px;display:grid;place-items:center;min-height:380px}
+.browser{width:100%;max-width:440px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 30px 50px -25px #000a;transform:rotate(-2deg);transition:transform .4s cubic-bezier(.2,.7,.3,1)}
+.project:hover .browser{transform:rotate(0) scale(1.02)}
+.browser-bar{display:flex;align-items:center;gap:6px;padding:12px 14px;background:#eef5f9;font-size:12px;color:#405778}
+.browser-bar i{width:9px;height:9px;border-radius:50%;background:#c7d8e3}
+.browser-bar span{margin-left:10px;padding:4px 10px;background:#fff;border-radius:6px}
+.browser-body{padding:28px 26px 30px;background:linear-gradient(150deg,#e9fbff,var(--ice) 55%,var(--cyan));color:var(--navy)}
+.browser-pill{display:inline-block;font-size:12px;font-weight:700;padding:6px 10px;border-radius:99px;background:#ffffffb0;margin-bottom:18px}
+.browser-body strong{display:block;font-size:42px;line-height:.95;letter-spacing:-.05em;margin-bottom:22px}
+.flow{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px;counter-reset:f}
+.flow li{counter-increment:f;font-size:12px;padding:7px 10px;border-radius:8px;background:#fff;box-shadow:0 4px 10px -6px #1b365d55}
+.flow li:before{content:counter(f) ". ";font-weight:700;color:var(--blue)}
+.project-info{padding:48px 44px;display:flex;flex-direction:column;justify-content:center}
+.project-meta{font-size:14px;color:#405778;margin-bottom:12px}
+.project-info h3{font-size:clamp(40px,4.4vw,60px);line-height:1;letter-spacing:-.05em;margin-bottom:14px}
+.project-info h3 span{color:var(--blue);display:inline-block;transition:transform .3s}
+.project:hover .project-info h3 span{transform:translate(4px,-4px)}
+.project-lead{font-size:20px;line-height:1.4;margin-bottom:16px}
+.project-info p{font-size:16px}
+.project-tags{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0}
+.project-tags span{font-size:13px;padding:7px 12px;border-radius:99px;background:var(--sage)}
+
+.process{margin-top:56px}
+.process>h3{font-size:24px;margin-bottom:20px}
+.process ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.process li{counter-increment:s;padding-top:20px;border-top:2px solid var(--navy)}
+.process li:before{content:"0" counter(s);display:block;font-size:13px;color:var(--blue);font-weight:700;margin-bottom:10px}
+.process strong{display:block;font-size:20px;font-weight:600;margin-bottom:6px;letter-spacing:-.02em}
+.process p{font-size:16px;margin:0;color:#405778}
+
+/* Lomba: foto dan catatan di dalam detail */
+.competition-body{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start;padding:0 28px 28px 128px}
+.competition-body.text-only{grid-template-columns:1fr}
+.competition-body.text-only p{max-width:680px}
+.competition-body figure{margin:0;border-radius:14px;overflow:hidden;box-shadow:0 14px 30px -18px #1b365d}
+.competition-body img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.competition-body p{font-size:17px;margin-bottom:12px}
+.competition-body .credit{font-size:14px;padding:10px 14px;border-radius:10px;background:#ffffff90;margin:0}
+.tag{font-size:13px;padding:6px 12px;border-radius:99px;border:1px solid currentColor;opacity:.85}
+
+/* Kontak */
+.socials{list-style:none;margin:0 0 28px;padding:0}
+.socials a{display:grid;grid-template-columns:110px 1fr auto;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid #ffffff30;font-size:16px;transition:color .2s,padding .2s}
+.socials li:first-child a{border-top:1px solid #ffffff30}
+.socials a span:nth-child(2){color:#bfdceb}
+.socials b{font-weight:400;font-size:20px}
+.socials a:hover{color:var(--ice);padding-left:6px}
+
+@media(max-width:1000px){
+  .project-preview{padding:36px 28px}
+  .project-info{padding:36px 32px}
+  .competition-body{padding-left:28px}
+}
+@media(max-width:700px){
+  .work{padding-top:12px}
+  .project{grid-template-columns:1fr;border-radius:24px}
+  .project-preview{min-height:0;padding:32px 22px}
+  .browser-body strong{font-size:34px}
+  .project-info{padding:28px 24px 30px}
+  .project-lead{font-size:18px}
+  .process ol{grid-template-columns:1fr;gap:16px}
+  .competition-body{grid-template-columns:1fr;gap:16px;padding:0 18px 22px}
+  .competition-body p{font-size:16px}
+  .tag{font-size:12px;padding:4px 10px}
+  .socials a{grid-template-columns:84px 1fr auto;font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.project:hover,.project:hover .browser{transform:none}}
