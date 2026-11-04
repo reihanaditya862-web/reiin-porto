@@ -21,6 +21,7 @@ Tidak perlu `npm install`. Server ini untuk pengembangan lokal.
 - `app.js`: menu mobile dan pemilih warna ilustrasi.
 - `profil-reiin.txt`: profil ringkas yang dapat diunduh.
 - `favicon.svg`: ikon situs.
+- `theme.js`: tombol tema terang/gelap. Kunjungan pertama mengikuti pengaturan perangkat, pilihan pengunjung disimpan di browser.
 - `additions.css`: tambahan dari Claude (section Karya, foto lomba, kontak, highlight hero). Dimuat paling akhir.
 - `assets/`: foto dokumentasi FOTEC 2.0 dan Kejurnas IRTC.
 - `server.js`: server lokal tanpa dependensi.
@@ -36,6 +37,7 @@ Ubah biodata di `index.html` dan `profil-reiin.txt`. Warna utama berada pada bag
 - Pilihan warna interaktif di bagian eksplorasi.
 - Detail pengalaman lomba yang dapat dibuka/tutup.
 - Unduhan profil ringkas.
+- Ganti tema terang/gelap dari tombol di header.
 
 Website tidak mengirim data, tidak menggunakan pelacak, dan tidak memerlukan akun.
 
