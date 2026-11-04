@@ -76,6 +76,12 @@
   .tag{font-size:12px;padding:4px 10px}
   .socials a{grid-template-columns:84px 1fr auto;font-size:14px}
 }
+/* Logo Reiin (SVG, warnanya ikut currentColor) */
+.mark{display:block;fill:currentColor}
+.logo .mark{height:38px;width:auto}
+.sculpture-face .mark{width:60%;height:auto;color:var(--navy);filter:drop-shadow(1px 1px 0 #50728b) drop-shadow(1px 1px 0 #50728b) drop-shadow(1px 1px 0 #50728b) drop-shadow(1px 1px 0 #50728b) drop-shadow(7px 10px 12px #005a9c66)}
+@media(max-width:600px){.logo .mark{height:32px}}
+
 /* Tombol tema */
 .header{gap:24px}.header nav{margin-left:auto}
 .theme-toggle{display:none;place-items:center;width:48px;height:48px;border:0;border-radius:50%;background:var(--sage);color:inherit;transition:background .2s,transform .3s}

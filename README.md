@@ -20,7 +20,7 @@ Tidak perlu `npm install`. Server ini untuk pengembangan lokal.
 - `depth.css`: lapisan desain dimensional terbaru, monogram 3D CSS, panel bertumpuk, warna dan bayangan.
 - `app.js`: menu mobile dan pemilih warna ilustrasi.
 - `profil-reiin.txt`: profil ringkas yang dapat diunduh.
-- `favicon.svg`: ikon situs.
+- `favicon.svg`: ikon situs, memakai logo Reiin.
 - `theme.js`: tombol tema terang/gelap. Kunjungan pertama mengikuti pengaturan perangkat, pilihan pengunjung disimpan di browser.
 - `additions.css`: tambahan dari Claude (section Karya, foto lomba, kontak, highlight hero). Dimuat paling akhir.
 - `assets/`: foto dokumentasi FOTEC 2.0 dan Kejurnas IRTC.
