@@ -1,44 +1,47 @@
-# Reiin / Personal portfolio — redesign 2026
+# Reiin — Personal portfolio
 
-Website portofolio **Reihan Nor Aditya SP (Reiin)**. Desain baru mengangkat tema **digital design notebook**: fondasi TKJ dan robotika, eksplorasi produk digital, serta perjalanan menuju UI/UX.
+Website profil Reihan Nor Aditya SP. HTML, CSS, dan JavaScript murni, tanpa dependensi, tanpa proses build, dan bisa dipakai offline.
 
-## Isi
+## Buka langsung
+Buka `dist/index.html` di Chrome, Edge, atau Firefox. Semua tampilan dan interaksi bekerja tanpa internet.
 
-- `index.html` — halaman utama: pengenalan, About Me, RecycleChain, timeline, foto pengalaman, hobi dan kontak.
-- `experience.html` — arsip pengalaman FOTEC 2024, FOTEC 2.0 2025, Kejurnas IRTC LFA 2026, dan panitia NFRC 2024.
-- `styles.css` — sistem visual, layout responsif, motion, dan dark mode.
-- `script.js` — menu mobile, dark mode persisten, dan progress scroll.
-- `assets/irtc-2026.jpg` dan `assets/fotec-2025.jpg` — foto dokumentasi pengguna.
+## Jalankan di localhost
+1. Pasang Node.js jika belum ada.
+2. Buka terminal di folder ini.
+3. Jalankan `npm run dev`.
+4. Buka http://localhost:3000.
+5. Tekan Ctrl+C untuk menghentikan server.
 
-## Cara preview lokal
+Tidak perlu `npm install`. Server ini untuk pengembangan lokal.
 
-Buka `index.html` dengan browser, atau jalankan server sederhana:
+## Struktur
+- `dist/index.html`: konten dan struktur halaman.
+- `dist/styles.css`: desain responsif, termasuk preferensi reduced motion.
+- `dist/app.js`: menu mobile dan pemilih warna ilustrasi.
+- `dist/profil-reiin.txt`: profil ringkas yang dapat diunduh.
+- `dist/favicon.svg`: ikon situs.
+- `server.js`: server lokal tanpa dependensi.
 
-```bash
-python -m http.server 8000
-```
+## Konten dan personalisasi
+Teks mengikuti biodata yang diberikan. Pengalaman lomba ditulis sebagai partisipasi. Tidak ada klaim juara, klien, atau proyek profesional. Monogram digunakan sebagai identitas visual tanpa mengarang foto profil. Email dan akun sosial belum dicantumkan karena belum diberikan.
 
-Lalu buka http://localhost:8000 . Tidak butuh npm, Node, atau proses build.
+Ubah biodata di `dist/index.html` dan `dist/profil-reiin.txt`. Warna utama berada pada bagian `:root` di `dist/styles.css`. Untuk menambahkan kontak asli, ganti atau lengkapi bagian `#kenalan`.
 
-## Upload ke GitHub/Vercel
+## Interaksi
+- Navigasi antarbagian dan tombol kembali ke atas.
+- Menu layar kecil, dengan dukungan Escape.
+- Pilihan warna interaktif di bagian eksplorasi.
+- Detail pengalaman lomba yang dapat dibuka/tutup.
+- Unduhan profil ringkas.
 
-1. **Backup/cek perubahan terakhir di GitHub** sebelum upload supaya edit Claude/versi online tidak tertimpa.
-2. Upload atau ganti **`index.html`, `experience.html`, `styles.css`, dan `script.js`** pada root repository yang terhubung ke Vercel.
-3. Upload folder **`assets/`** beserta kedua foto (hindari upload ZIP utuh sebagai file web).
-4. Commit ke branch production, biasanya `main`. Pastikan Vercel berhasil deploy dan cek homepage serta `/experience.html`.
-5. Simpan file lain dari repo lama yang mungkin diperlukan layanan Anda; jangan hapus isi repository secara massal.
+Website tidak mengirim data, tidak menggunakan pelacak, dan tidak memerlukan akun.
 
-## Catatan akurasi
+## Pembaruan UI/UX — 4 November 2026
 
-- Foto Kejurnas IRTC LFA 2026: juara 1 adalah **rekan komunitas**, bukan Reihan.
-- Foto FOTEC 2.0 2025: juara 2 adalah **rekan komunitas**, bukan Reihan.
-- FOTEC 2024 serta NFRC 2024 belum memiliki foto; digunakan placeholder.
-- RecycleChain disebut sebagai **prototipe**, bukan produk komersial aktif.
-- About Me menggunakan detail pendidikan dan karier yang diberikan oleh Reihan.
-- Pertimbangkan izin rekan-rekan sebelum foto kelompok dipublikasikan ke website publik.
+Palet mengikuti referensi pengguna: navy #1B365D, biru #005A9C, cyan #60C1E5, dan biru muda #A0E0EF. Putih digunakan untuk ruang baca; biru pucat #E9F7FC merupakan warna permukaan pendukung.
 
-## Design intent
+Komposisi editorial dengan nama Reiin besar, hierarki teks yang lebih terbaca, pendidikan dan lomba yang lebih menonjol, menu HP, pilihan warna dengan status aksesibel, serta animasi singkat yang mengikuti reduced motion. Tidak ada foto, prestasi, atau kontak baru yang direkayasa.
 
-Palet: paper `#f3f6f8`, ink `#1a2940`, cobalt `#334bd5`, lime `#d5ec8f`, lavender `#d9d8ff`, warm accent `#ffc4a6`. Tidak ada font atau aset JS pihak ketiga.
+Empat panduan yang diterapkan: design-taste-frontend (arah tipografi, seed 13108829), no-ai-design-slop (mengurangi dekorasi generik), web-design-guidelines (semantik, fokus, navigasi, gerak), dan ui-ux-pro-max (keterbacaan, kontras, target sentuh).
 
-Motion singkat dan responsif; semua konten tetap terlihat ketika JS mati. Animasi menghormati `prefers-reduced-motion`.
+Validasi: pemeriksaan sintaks JavaScript dan lint desain lolos. Tampilan desktop serta frame responsif 390/768 px diperiksa melalui browser; menu HP, detail lomba, dan pemilih warna diuji. Inspector Chrome lokal tidak tersedia, jadi tidak ada klaim lulus audit otomatis seluruh viewport. Foto karya asli masih dapat ditambahkan saat tersedia.
